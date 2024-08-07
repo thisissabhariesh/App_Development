@@ -1,0 +1,142 @@
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f0f0f0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mission-section,
+.journey-section,
+.success-stories-section,
+.team-section,
+.join-section {
+  padding: 30px;
+  background-color: #e0f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #00695c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #00796b;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #004d40;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.mission-section img,
+.journey-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.stories,
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.story,
+.team-member {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 1.5s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.story img,
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.join-button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
